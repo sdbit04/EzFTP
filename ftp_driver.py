@@ -19,5 +19,3 @@ with ftplib.FTP(host="ftp-emea.teoco.com", user="Airtel3G", passwd="PocAg3") as 
         # TODO: Local directory is hard coded here, need to be dynamic based on input param, for a particular base_dir all the files recursively, will be downloaded at the directory provided as argument
         ftp_con.retrbinary('RETR ' + R_filename, open("C:\\Users\\Swapan\\Downloads\\FTP\\" + R_filename.split('/')[-1], 'wb').write)
 
-
-
